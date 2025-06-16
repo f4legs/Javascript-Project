@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
     <div class="container bg-white rounded-xl shadow-lg p-6 md:p-8 max-w-2xl w-full">
-        <h1 class="text-3xl font-bold text-gray-800 mb-6">Number Generation Logic (0000-9999)</h1>
+        <h1 class="text-3xl font-bold text-gray-800 mb-6">Ajai Number Generator</h1>
 
         <!-- Message Box for user feedback -->
         <div id="messageBox" class="message-box rounded-lg p-4 mb-4 text-sm hidden">
@@ -28,7 +28,7 @@
         </div>
         <div class="mb-4">
             <label for="firstDigitInput" class="block text-gray-700 text-sm font-medium mb-2 text-left">
-                First digit (N from 0-9):
+                First digit (0-9):
             </label>
             <input
                 type="number"
@@ -41,7 +41,7 @@
         </div>
         <div class="mb-4">
             <label for="thaiCharsInput" class="block text-gray-700 text-sm font-medium mb-2 text-left">
-                Two Thai characters (XX from ก-ฮ):
+                Two Thai characters (ก-ฮ):
             </label>
             <input
                 type="text"
@@ -51,29 +51,12 @@
                 maxlength="2"
             />
         </div>
-        <!-- <div id="rules">
-            <h3>Rules</h3>
-            <ul>
-                <li>1. all the digits must sum to more than 4</li>
-                <li>2. the first pair and last pair digits must sum to more than 4 ( e.g., 1234 -> 1+2 > 4 and 3+4 > 4 )</li>
-                <li>3. the first digit and last digit must sum to more than 4 ( e.g., 1234 -> 1+4 > 4 )</li>
-                <li>4. if there is "1" in the first or second digit, the third or fourth digits must not be "1"</li>
-                <li>5. all digits sum must not be equal to 13</li>
-                <li>6. the first and last must not sum to 13</li>
-            </ul><br>
-        </div> -->
         <button
             id="generateButton"
             class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition transform hover:scale-105"
         >
             Generate Numbers
         </button>
-
-        <!-- Need to Change result to be in this format
-            (Example)
-            SUM: 12
-            Numbers: 1234, 5678, 9101
-        -->
         <div id="results-container" class="mt-6 border border-gray-200 rounded-lg p-4 bg-gray-50 overflow-y-auto max-h-96">
             <h2 class="text-xl font-semibold text-gray-700 mb-3 text-left">Generated Numbers:</h2>
             <pre id="results" class="text-gray-600 text-sm leading-relaxed whitespace-pre-wrap"></pre>
