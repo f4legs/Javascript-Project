@@ -1,6 +1,6 @@
 /**Program name: Good registered car plate number sequence
- * Author: Your Name
- * Date: 2023-10-01
+ * Author: F
+ * Date: 2025-06-16
  * Description: This program generates a list of valid car plate numbers
  * Thailand car plate will be in this bor mat: N XX NNNN which N is a number from 0 to 9
  * and XX is a Thai Characters from ก-ฮ
